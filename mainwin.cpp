@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
     settings = new QSettings();
 
     view = new QGCodeViewer(this);
-    view->gcode = ui->gcode;
+    view->gcode_editor = ui->gcode;
 
     setCentralWidget(view);
 
